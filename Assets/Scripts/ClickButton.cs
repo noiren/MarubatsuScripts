@@ -12,6 +12,7 @@ public class ClickButton : MonoBehaviour
             GameManager.instance.ChangeTurn();
             GameManager.instance.selectPosText.SetActive(false);
             GameManager.instance.isClick = false;
+            GameManager.instance.countDownTime = 15f;
         }
         else if(!GameManager.instance.isClick && GameManager.instance.canGoNext)
         {
